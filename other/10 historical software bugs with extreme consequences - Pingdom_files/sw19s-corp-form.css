@@ -1,0 +1,69 @@
+.sw19s-corp-form {
+  box-shadow: 0 0 3px 3px #eee;
+  border-top: 5px solid #fef100;
+  padding: 20px 15px 40px 15px;
+
+  .promotions,
+  .terms {
+    padding-left: 22px;
+    text-indent: -22px;
+    margin-top: 30px;
+
+    p {
+      display: inline;
+    }
+
+    input[type="checkbox"] {
+      appearance: checkbox;
+      -webkit-appearance: checkbox;
+      width: auto;
+      height: auto;
+    }
+
+    input[type="checkbox"]:checked:after {
+      display: none;
+    }
+
+    label {
+      font-size: 14px;
+      display: inline;
+    }
+  }
+
+  .terms-text {
+    margin-top: 30px;
+    p,
+    a {
+      display: inline;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: #a1a1a1;
+    }
+  }
+
+  input[type="submit"] {
+    display: block;
+    margin: 30px auto 0 auto;
+  }
+
+  .promotions {
+    display: none;
+  }
+
+  &.show-optin .promotions {
+    display: block;
+  }
+
+  @media (max-width: 425px) {
+    .promotions,
+    .terms {
+      margin-top: 25px;
+    }
+
+    input[type="submit"] {
+      font-size: 12px;
+      line-height: normal;
+    }
+  }
+}

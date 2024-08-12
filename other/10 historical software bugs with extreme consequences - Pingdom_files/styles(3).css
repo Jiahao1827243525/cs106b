@@ -1,0 +1,289 @@
+.sw19b-icon-cards {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  h2 {
+    margin-bottom: 0px;
+  }
+
+  .cards-main-title {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .icon-card {
+    &.left {
+      align-items: start;
+      .text {
+        text-align: left;
+      }
+    }
+  }
+  .icon-card {
+    &.center {
+      align-items: center;
+      .text {
+        text-align: center;
+      }
+    }
+  }
+  .icon-card {
+    &.right {
+      align-items: end;
+      .text {
+        text-align: right;
+      }
+    }
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .align-right {
+    text-align: right;
+  }
+
+  .cards-desktop {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: 60px;
+    position: relative;
+    &.show-grey-background {
+      &::before {
+        content: "";
+        z-index: -1;
+        top: -40px;
+        left: -40px;
+        position: absolute;
+        background-color: #efefef;
+        height: 120px;
+        width: 100%;
+      }
+      &::after {
+        content: "";
+        z-index: -1;
+        top: -40px;
+        right: -15px;
+        position: absolute;
+        background-color: #efefef;
+        height: 120px;
+        width: 100%;
+      }
+    }
+
+    &.as-program-cards {
+      .icon-card svg {
+        margin-top: 20px;
+      }
+      .text {
+        padding-top: 20px;
+        .description {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .icon-card {
+    box-shadow: 0 0 20px 0 rgba(17, 17, 17, 0.2);
+    background: #fff;
+    border-top: 5px solid #00C8DC;
+    img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+    &.no-bar {
+      border-top: none;
+    }
+  }
+
+  .icon-card svg {
+    height: 40px;
+    display: block;
+    margin: 26px 20px 0 20px;
+  }
+
+  .icon-card {
+    &.sw-orange {
+      border-color: #FF6200;
+      svg {
+        fill: #FF6200;
+      }
+    }
+    &.logo-grey {
+      border-color: #111111;
+      svg {
+        fill: #111111;
+      }
+    }
+    &.blue {
+      border-color: #00C8DC;
+      svg {
+        fill: #00C8DC;
+      }
+    }
+    &.geek-green {
+      border-color: #AADC33;
+      svg {
+        fill: #AADC33;
+      }
+    }
+    &.white {
+      border-color: #fff;
+      svg {
+        fill: #fff;
+      }
+    }
+    &.yellow {
+      border-color: #FBDC44;
+      svg {
+        fill: #FBDC44;
+      }
+    }
+  }
+
+  .icon-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+
+  .image {
+    height: 203px;
+  }
+
+  .image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 1.29;
+    color: #111111;
+    text-align: center;
+    padding: 25px 20px 30px 20px;
+  }
+
+  .text .title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  .as-program-cards {
+    .text .title {
+      font-size: 16px;
+    }
+  }
+
+  .text *:last-child:not(.card-bottom-button) {
+    margin-bottom: 0;
+  }
+
+  .glider-contain {
+    display: none;
+    width: calc(100% - 60px);
+    margin-top: 20px;
+  }
+
+  .glider .icon-card {
+    margin: 20px;
+  }
+
+  .arrow svg {
+    width: 20px;
+  }
+
+  .arrow {
+    width: 22px;
+    height: 67px;
+    border: none;
+  }
+
+  .arrow.disabled {
+    display: none;
+  }
+
+  .glider-dots {
+    margin-top: 20px;
+  }
+
+  .glider-dot {
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border: 1px solid #FF6200;
+  }
+
+  .glider-dot.active {
+    background: #FF6200;
+  }
+
+  p.bottom-button {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .card-bottom-button {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .bulleted-list {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .cards-desktop {
+      &.hide {
+        display: none;
+      }
+      &.list {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .glider-contain {
+      display: block;
+    }
+
+    .bulleted-list {
+      display: block;
+    }
+
+    .bullet-point {
+      padding-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .as-program-cards .sw19s-btn {
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+
+  .cta-link {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

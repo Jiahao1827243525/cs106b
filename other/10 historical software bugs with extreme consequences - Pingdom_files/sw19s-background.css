@@ -1,0 +1,24 @@
+.sw19s-background {
+  color: #111111;
+
+  &.logo-grey {
+    background: #eee;
+  }
+
+  &.blue {
+    background-color: #00C8DC;
+    color: #fff;
+  }
+
+  &.geek-green {
+    background-color: #AADC33;
+  }
+
+  &.sw-orange {
+    background-color: #FF6200;
+  }
+
+  &.yellow {
+    background-color: #FBDC44;
+  }
+}

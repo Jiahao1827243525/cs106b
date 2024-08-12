@@ -1,0 +1,171 @@
+.sw19b-feature-array-2 {
+  .feature {
+    display: flex;
+    padding: 30px 0;
+    border-bottom: 2px dotted #ccc;
+  }
+
+  .feature:first-child {
+    padding-top: 0;
+  }
+
+  .feature.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .feature:last-of-type {
+    border: 0;
+    padding-bottom: 0;
+  }
+
+  .feature-image,
+  .video {
+    flex-basis: 560px;
+  }
+
+  .feature-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .feature-text {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: 30px;
+    min-width: 380px;
+    color: #111111;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .feature-text *:first-child {
+    margin-top: 0;
+  }
+
+  .feature-text ul {
+    padding-left: 0;
+    list-style-position: inside;
+    font-size: 16px;
+  }
+
+  .feature-text li {
+    margin: 5px 0;
+  }
+
+  .feature.reverse .feature-text {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+
+  .feature h2 {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0 16px;
+  }
+
+  .link-and-sub {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-and-sub p {
+    font-size: 12px;
+    color: #a1a1a1;
+  }
+
+  .link-and-sub .sw19s-btn {
+    white-space: nowrap;
+  }
+
+  a.text-link {
+    margin-left: 8px;
+    padding-left: 8px;
+    line-height: 40px;
+    border-left: 2px dotted #a1a1a1;
+    display: inline-block;
+    color: #ff6200;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  a.text-link:hover {
+    text-decoration: underline;
+  }
+
+  p.bottom-button {
+    text-align: center;
+  }
+
+  .mobile-title {
+    display: none;
+  }
+
+  .mobile-title h2 {
+    font-size: 20px;
+  }
+
+  .left-feature {
+    flex: 1;
+  }
+
+  .wistia-responsive-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+  }
+
+  .wistia-responsive-container span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .feature,
+    .feature.reverse {
+      flex-direction: column;
+    }
+
+    .feature .feature-text p:first-of-type {
+      margin: 1em 0;
+    }
+
+    .feature-text {
+      margin-right: 0;
+      min-width: auto;
+      order: 1;
+    }
+
+    .feature.reverse .feature-text {
+      margin-left: 0;
+    }
+
+    .feature-image,
+    .video {
+      flex-basis: auto;
+    }
+
+    .mobile-title {
+      display: block;
+    }
+
+    .feature-text h2 {
+      display: none;
+    }
+    .feature-wistia {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+:root {
+  /* SolarWinds Styleguide 3.2 colors */
+  --white: #fff;
+  --primary-orange-400: #ff6200;
+  --primary-silver-200: #d8e3e3;
+  --primary-silver-300: #a0b9b9;
+  --primary-silver-400: #6e8c96;
+  --accent-green-300: #aadc33;
+  --secondary-blue-200: #00c8dc;
+  --secondary-blue-300: #00a0be;
+  --secondary-blue-500: #006482;
+  --secondary-blue-600: #003c4e;
+  --neutral-gray-100: #ccc;
+  --neutral-gray-200: #a1a1a1;
+  --neutral-gray-300: #666;
+  --neutral-gray-400: #444;
+  --primary-black-600: #111;
+  --neutral-gray-50: #eee;
+  --cool-neutral-cool-gray-100: #f4f7f7;
+  --cool-neutral-cool-gray-200: #ebefef;
+  --accent-yellow-400: #fbdc44;
+  --semantic-red-400: #e20a38;
+  --semantic-red-500: #c6022c;
+  --semantic-green-500: #7ac400;
+  --semantic-green-725: #52a700;
+  --semantic-green-800: #408500;
+  --semantic-blue-400: #2c61f5;
+  --neutral-white: #fff;
+}
+
+.sw19s-text-color-blue {
+  color: #00c8dc;
+}
+
+.sw19s-text-color-sw-orange {
+  color: #ff6200;
+}
+
+.sw19s-text-color-geek-green {
+  color: #aadc33;
+}
+
+.sw19s-text-color-yellow {
+  color: #fbdc44;
+}
+
+.sw19s-text-color-white {
+  color: #fff;
+}
+
+.sw19s-text-color-logo-grey {
+  color: #111111;
+}
+
+.sw19s-border-color-blue {
+  border: #00c8dc;
+}
+
+.sw19s-border-color-sw-orange {
+  border: #ff6200;
+}
+
+.sw19s-border-color-geek-green {
+  border: #aadc33;
+}
+
+.sw19s-border-color-yellow {
+  border: #fbdc44;
+}
+
+.sw19s-border-color-white {
+  border: #fff;
+}
+
+.sw19s-border-color-logo-grey {
+  border: #111111;
+}
+
+.sw19s-bg-color-blue {
+  background: #00c8dc;
+}
+
+.sw19s-bg-color-sw-orange {
+  background: #ff6200;
+}
+
+.sw19s-bg-color-geek-green {
+  background: #aadc33;
+}
+
+.sw19s-bg-color-yellow {
+  background: #fbdc44;
+}
+
+.sw19s-bg-color-white {
+  background: #fff;
+}
+
+.sw19s-bg-color-logo-grey {
+  background: #111111;
+}
+
+.sw19s-bg-color-ghost {
+  background: #fafafa;
+}
+
+.sw19s-bg-color-ghost-grey {
+  background: #eee;
+}
+
+.sw19s-bg-color-light-grey {
+  background: #ccc;
+}
+
+.sw19s-bg-color-grey-blue {
+  background: #dae2e3;
+}
+
+.sw19s-svg-color-blue {
+  fill: #00c8dc;
+}
+
+.sw19s-svg-color-sw-orange {
+  fill: #ff6200;
+}
+
+.sw19s-svg-color-geek-green {
+  fill: #aadc33;
+}
+
+.sw19s-svg-color-yellow {
+  fill: #fbdc44;
+}
+
+.sw19s-svg-color-white {
+  fill: #fff;
+}
+
+.sw19s-svg-color-logo-grey {
+  fill: #111111;
+}

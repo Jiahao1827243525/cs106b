@@ -1,0 +1,237 @@
+.sw19b-benefits {
+  padding: 6rem 0 6.5rem 0;
+  background-color: #f4f7f7;
+
+  .sw19s-std-wrap {
+    padding: 0;
+    max-width: 1230px;
+  }
+
+  .sw19s-benefits-title {
+    font-size: 3rem;
+    line-height: 1.25;
+    text-align: center;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      all: unset;
+    }
+  }
+
+  .sw32-button {
+    &.secondary:active {
+      color: var(--primary-black-600);
+      fill: var(--primary-black-600);
+      border: solid 2px var(--semantic-green-800);
+      background-color: var(--semantic-green-500)
+    }
+
+    &.tertiary:active {
+      color: var(--primary-black-600);
+      fill: var(--primary-black-600);
+      border: solid 2px var(--semantic-green-800);
+      background-color: var(--semantic-green-500)
+    }
+  }
+
+  .sw19s-block-subtitle {
+    margin-bottom: 3.5rem;
+    margin-top: 2rem;
+    font-size: 1.375rem;
+    line-height: 1.64;
+    color: #444444;
+    font-family: 'Roboto Slab';
+  }
+
+  .cards-desktop {
+    display: grid;
+    column-gap: 4.75rem;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cards-grid {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  .benefits-card {
+    max-width: 22.5rem;
+    height: 25.875rem;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.08);
+    border: solid 1px #ccc;
+  }
+
+  .benefits-card:hover {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .cards-desktop .benefits-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+
+  .image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .text {
+    flex-grow: 1;
+    background: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #111111;
+    text-align: left;
+    align-self: stretch;
+    padding: 2rem 20px 30px 20px;
+    border-radius: 0px 0px 10px 10px;
+
+    .link {
+      padding-top: 2.75rem;
+    }
+
+    a {
+      line-height: 1.33;
+      text-align: left;
+    }
+  }
+
+  .glider-contain {
+    display: none;
+    width: calc(100% - 60px);
+  }
+
+  .glider .benefits-card {
+    margin: 20px;
+  }
+
+  .arrow svg {
+    width: 20px;
+  }
+
+  .arrow {
+    width: 22px;
+    height: 67px;
+    border: none;
+  }
+
+  .arrow.disabled {
+    display: none;
+  }
+
+  .glider-dots {
+    margin-top: 20px;
+  }
+
+  .glider-dot {
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border: 1px solid #FF6200;
+  }
+
+  .glider-dot.active {
+    background: #FF6200;
+  }
+
+  p.bottom-button {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .top-content {
+    font-weight: 300;
+    margin-bottom: 30px;
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  .bulleted-list {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3.5rem 1.5rem 4rem 1.5rem;
+
+    .sw19s-benefits-title {
+      font-size: 2.125rem;
+      line-height: 1.29;
+      text-align: left;
+    }
+
+    .sw19s-block-subtitle {
+      margin-bottom: 2rem;
+      margin-top: 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      color: #444444;
+      text-align: left;
+    }
+
+    .text {
+      padding: 1.5rem 1.5rem 4rem 1.5rem;
+      font-size: 1.375rem;
+      line-height: 1.27;
+
+      .link {
+        padding-top: 2rem;
+      }
+
+      a {
+        line-height: 1.43;
+        font-size: 0.875rem;
+      }
+    }
+
+    .benefits-card {
+      border-radius: 10px;
+      height: fit-content;
+      width: 20.5rem;
+      background-color: #fff;
+    }
+
+    .benefits-card:hover {
+      box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    .cards-desktop {
+      display: none;
+    }
+
+    .glider-contain {
+      display: block;
+    }
+
+    .bulleted-list {
+      display: block;
+    }
+
+    .bullet-point {
+      padding-bottom: 10px;
+    }
+
+    .top-content {
+      font-size: 18px;
+    }
+  }
+}

@@ -6,18 +6,42 @@
  */
 #include "OnlyConnect.h"
 #include "GUI/SimpleTest.h"
+#include <set>
 using namespace std;
+
+set<char> consonants = {
+    'b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm',
+    'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z',
+    'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M',
+    'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z'
+};
+
+bool isConsonant(char c) {
+    return consonants.find(c) != consonants.end();
+}
 
 string onlyConnectize(string phrase) {
     /* TODO: The next few lines just exist to make sure you don't get compiler warning messages
      * when this function isn't implemented. Delete these lines, then implement this function.
      */
-    (void) phrase;
-    return "";
+    // (void) phrase;
+    // return "";
+    if (phrase.empty()) {
+        return "";
+    }
+
+    size_t size = phrase.length();
+    if (size == 1) {
+        char c = toupper(phrase[0]);
+        if(isConsonant(c)) {
+            return string(1, c);
+        } else {
+            return "";
+        }
+    }
+    size_t index = size / 2;
+    return onlyConnectize(phrase.substr(0, index)) + onlyConnectize(phrase.substr(index));
 }
-
-
-
 
 
 
@@ -54,8 +78,15 @@ PROVIDED_TEST("Handles single-character inputs.") {
  * Happy testing!
  */
 
+STUDENT_TEST("test isConsonant") {
+    EXPECT(isConsonant('b'));
+    EXPECT(isConsonant('J'));
+    EXPECT(!isConsonant('\0'));
+    EXPECT(!isConsonant('$'));
+}
 
-
-
+STUDENT_TEST("Handles empty inputs.") {
+    EXPECT_EQUAL(onlyConnectize(""), "");
+}
 
 
